@@ -41,7 +41,7 @@ open class ReactiveBleClient(private val context: Context) : BleClient {
 
     companion object {
         // this needs to be in companion update since background isolates respawn the event channels
-        // Fix for https://github.com/PhilipsHue/flutter_reactive_ble/issues/277
+        // Fix for https://github.com/xyhuangjia/flutter_reactive_ble/issues/277
         private val connectionUpdateBehaviorSubject: BehaviorSubject<ConnectionUpdate> =
             BehaviorSubject.create()
 

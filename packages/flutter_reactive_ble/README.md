@@ -47,11 +47,11 @@ In case you are using ProGuard add the following snippet to your `proguard-rules
 -keep class com.signify.hue.** { *; }
 ```
 
-This will prevent issues like [#131](https://github.com/PhilipsHue/flutter_reactive_ble/issues/131).
+This will prevent issues like [#131](https://github.com/xyhuangjia/flutter_reactive_ble/issues/131).
 
 ### iOS
 
-For iOS it is required you add the following entries to the `Info.plist` file of your app. It is not allowed to access Core BLuetooth without this. See [our example app](https://github.com/PhilipsHue/flutter_reactive_ble/blob/master/example/ios/Runner/Info.plist) on how to implement this. For more indepth details: [Blog post on iOS bluetooth permissions](https://medium.com/flawless-app-stories/handling-ios-13-bluetooth-permissions-26c6a8cbb816)
+For iOS it is required you add the following entries to the `Info.plist` file of your app. It is not allowed to access Core BLuetooth without this. See [our example app](https://github.com/xyhuangjia/flutter_reactive_ble/blob/master/example/ios/Runner/Info.plist) on how to implement this. For more indepth details: [Blog post on iOS bluetooth permissions](https://medium.com/flawless-app-stories/handling-ios-13-bluetooth-permissions-26c6a8cbb816)
 
 iOS13 and higher
 * NSBluetoothAlwaysUsageDescription
@@ -96,7 +96,7 @@ _ble.statusStream.listen((status) {
 
 Use ` _ble.status` to get the current status of the host device.
 
-See [BleStatus](https://github.com/PhilipsHue/flutter_reactive_ble/blob/master/packages/reactive_ble_platform_interface/lib/src/model/ble_status.dart) for
+See [BleStatus](https://github.com/xyhuangjia/flutter_reactive_ble/blob/master/packages/reactive_ble_platform_interface/lib/src/model/ble_status.dart) for
 more info about the meaning of the different statuses.
 
 ### Establishing connection
@@ -236,7 +236,7 @@ RxJavaPlugins.setErrorHandler { throwable ->
 
 Before you are able to execute BLE operations the BLE-stack of the device makes sure everything is setup correctly and then reports ready for operation. For some devices this takes a bit longer than for others. When starting the app make sure that the BLE-stack is properly initialized before you execute BLE operations. The safest way to do this is by listening to the `statusStream` and wait for `BleStatus.ready`.
 
-This will prevent issues like [#147](https://github.com/PhilipsHue/flutter_reactive_ble/issues/147).
+This will prevent issues like [#147](https://github.com/xyhuangjia/flutter_reactive_ble/issues/147).
 
 #### Unofficial example apps
 

@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 Bluetooth Low Energy (BLE) Flutter plug-in
                        DESC
-  s.homepage         = 'https://github.com/PhilipsHue/flutter_reactive_ble'
+  s.homepage         = 'https://github.com/xyhuangjia/flutter_reactive_ble'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Your Company' => 'email@example.com' }
   s.source           = { :path => '.' }
